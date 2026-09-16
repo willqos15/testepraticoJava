@@ -131,28 +131,91 @@ Salário mínimo = R$ 1.212,00
 
 O resultado é apresentado com duas casas decimais.
 
-## Como executar
+## Pré-requisitos
 
-É necessário ter o **Java JDK** instalado na máquina.
+Para executar o projeto, é necessário ter instalado:
 
-Pelo terminal, entre na pasta que contém os arquivos `.java` e compile:
+* **Java JDK 17 ou superior**
+* Um terminal (CMD, PowerShell ou similar)
+
+Não são necessárias bibliotecas ou dependências externas.
+
+Para verificar se o Java está instalado, execute:
+
+```bash
+java -version
+```
+
+Também é possível verificar a versão do compilador:
+
+```bash
+javac -version
+```
+
+Se os comandos retornarem a versão instalada do Java, o ambiente está pronto para executar o projeto.
+
+## Como executar e testar
+
+### 1. Clonar ou baixar o projeto
+
+Baixe o projeto ou clone o repositório utilizando Git:
+
+```bash
+git clone https://github.com/willqos15/testepraticoJava
+```
+
+
+### 2. Acessar a pasta `src`
+
+Entre na pasta do projeto:
+
+```bash
+cd src
+```
+
+### 3. Compilar o projeto
+
+Como o projeto não possui dependências externas, todos os arquivos `.java` podem ser compilados diretamente:
 
 ```bash
 javac *.java
 ```
 
-Depois execute:
+Se a compilação for concluída sem mensagens de erro, os arquivos `.class` serão gerados na mesma pasta.
+
+### 4. Executar o programa
+
+Execute a classe principal:
 
 ```bash
 java Main
 ```
 
-Também é possível abrir o projeto em uma IDE como:
+### 5. Verificar os resultados
+
+A execução do programa apresenta no console as etapas solicitadas no teste, permitindo verificar:
+
+* Funcionários inseridos
+* Remoção do funcionário João
+* Dados dos funcionários formatados
+* Salários após o aumento de 10%
+* Funcionários agrupados por função
+* Aniversariantes dos meses de outubro e dezembro
+* Funcionário mais velho
+* Lista em ordem alfabética
+* Total dos salários
+* Quantidade de salários mínimos recebida por cada funcionário
+
+## Execução pela IDE
+
+O projeto também pode ser executado utilizando uma IDE com suporte a Java, como:
 
 * IntelliJ IDEA
 * Eclipse
 * Apache NetBeans
 * Visual Studio Code com suporte ao Java
+
+Nesse caso, basta abrir a pasta do projeto, localizar a classe `Main.java` e executar o método `main`.
 
 ## Observações
 
